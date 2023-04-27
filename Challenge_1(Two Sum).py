@@ -15,7 +15,7 @@ def two_sum(subtractor, array_of_numbers):
     """Main codebase for two sum challenge"""
     for any_number in array_of_numbers:
 
-        if str(subtractor - int(any_number)) in array_of_numbers:
+        if str(subtractor - int(any_number)) in array_of_numbers and subtractor != 2 * int(any_number):
             return \
                 [array_of_numbers.index(any_number), array_of_numbers.index(str(subtractor - int(any_number)))]
         else:
