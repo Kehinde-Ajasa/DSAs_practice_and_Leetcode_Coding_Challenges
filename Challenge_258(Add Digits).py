@@ -1,4 +1,4 @@
-"""This program solves a challenge that continue adding a nth digit number until its result
+"""This program solves a challenge that keeps adding a nth digit number until its result
 is another nth digit number long"""
 
 try:
