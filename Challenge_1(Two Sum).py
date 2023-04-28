@@ -5,24 +5,13 @@ create a dynamic empty dictionary and allow individual items be the key and the 
 if V appears in the dictionary, return, loop value for V and the value of the key of V that appeared"""
 
 
-def get_input():
-    """Subroutine to accept all user's Input."""
-    numbers = input("Enter all the values in the array, \
-separated with a ',' : ")
-    target = int(input("Please enter the target: "))
-    numbers_array = numbers.split(',')
-    return [target, numbers_array]
-
-
-def two_sum(array_of_numbers):
-    """Main codebase for two sum challenge"""
+def two_sum(array_of_numbers: list[int], target: int) -> list:
+    """Function to help solve the challenge."""
     dictionary = {}
-
-    for i in range(len(array_of_numbers[1])):
-        difference = array_of_numbers[0] - int(array_of_numbers[1][i])
+    for i in range(len(array_of_numbers)):
+        difference = target - array_of_numbers[i]
         if difference in dictionary:
             return [dictionary[difference], i]
-        dictionary[int(array_of_numbers[1][i])] = i
+        dictionary[array_of_numbers[i]] = i
 
-
-print(two_sum(get_input()))
+print(two_sum([4,7,8,9], 12))
