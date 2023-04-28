@@ -17,6 +17,7 @@ separated with a ',' : ")
 def two_sum(array_of_numbers):
     """Main codebase for two sum challenge"""
     dictionary = {}
+
     for i in range(len(array_of_numbers[1])):
         difference = array_of_numbers[0] - int(array_of_numbers[1][i])
         if difference in dictionary:
