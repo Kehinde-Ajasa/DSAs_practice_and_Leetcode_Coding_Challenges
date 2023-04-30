@@ -6,7 +6,6 @@ if V appears in the dictionary, return, loop value for V and the value of the ke
 
 try:
 
-
     def two_sum(array_of_numbers: list[int], target: int) -> list:
         """Function to help solve the challenge."""
         dictionary = {}
