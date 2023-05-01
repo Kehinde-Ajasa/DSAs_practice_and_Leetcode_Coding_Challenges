@@ -1,2 +1,2 @@
-from number_to_roman_numerals import convert_to_roman_numerals
+from number_to_roman_numerals import *
 
