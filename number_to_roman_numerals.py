@@ -20,3 +20,16 @@ def standards(entry: int):
         1000: "M",
     }
     return roman_numerals_dictionary[entry]
+
+
+def move_upward_or_downward(item):
+    """Determine how user's input would approach a standard, by adding or subtracting."""
+    roman_numerals_dictionary = {
+        1: "I",
+        5: "V",
+        10: "X",
+        50: "L",
+        100: "C",
+        500: "D",
+        1000: "M",
+    }
