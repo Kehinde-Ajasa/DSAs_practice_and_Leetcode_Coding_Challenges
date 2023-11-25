@@ -11,9 +11,12 @@ try:
         dictionary = {}
         for i in range(len(array_of_numbers)):
             difference = target - array_of_numbers[i]
+            
             if difference in dictionary:
                 return [dictionary[difference], i]
-            dictionary[array_of_numbers[i]] = i
+            
+            else:
+                dictionary[array_of_numbers[i]] = i
 
 
 except TypeError:
